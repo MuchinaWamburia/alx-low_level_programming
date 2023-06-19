@@ -7,6 +7,7 @@
 int main(void)
 {
 putchar('0' + 0);
+putchar('\n');
 putchar('0' + 1);
 putchar('0' + 2);
 putchar('0' + 3);
