@@ -1,3 +1,2 @@
 #!/bin/bash
-# Generate the assembly code using gcc
 gcc -S -masm=intel "$c_file" -o "${c_file%.c}.s"
