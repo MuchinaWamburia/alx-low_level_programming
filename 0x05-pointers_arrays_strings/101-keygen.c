@@ -14,6 +14,7 @@ char password[10];
 
 srand(time(NULL));
 
+int i;
 for (int i = 0; i < password_length; i++)
 {
 password[i] = rand() % 94 + 33;
