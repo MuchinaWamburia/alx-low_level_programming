@@ -23,5 +23,5 @@ break;
 i++;
 }
 
-return (result *sign);
+return ((int)(result *sign));
 }
