@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _strcat - Concatenates two strings.
 * @dest: The destination string.
@@ -9,19 +8,23 @@
 */
 char *_strcat(char *dest, char *src)
 {
-char *ptr = dest;
+int dest_len = 0;
+int i = 0;
 
-while (*ptr)
-ptr++;
+/* Find the length of the destination string */
+while (dest[dest_len] != '\0')
+dest_len++;
 
-while (*src)
+/* Append characters from src to dest */
+while (src[i] != '\0')
 {
-*ptr = *src;
-ptr++;
-src++;
+dest[dest_len] = src[i];
+dest_len++;
+i++;
 }
 
-*ptr = '\0';
+/* Add a null byte at the end */
+dest[dest_len] = '\0';
 
 return (dest);
 }
