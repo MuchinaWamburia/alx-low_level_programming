@@ -86,7 +86,7 @@ carry = 0;
 for (j = len2 - 1; j >= 0; j--)
 {
 n2 = num2[j] - '0';
-sum = n1 * n2 + result[i + j + 1] + carry;
+sum = n1 *n2 + result[i + j + 1] + carry;
 carry = sum / 10;
 result[i + j + 1] = sum % 10;
 }
