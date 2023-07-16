@@ -27,5 +27,5 @@ if (needle[j] == '\0')
 return (&haystack[i]);
 }
 
-return (NULL);
+return (0);
 }
