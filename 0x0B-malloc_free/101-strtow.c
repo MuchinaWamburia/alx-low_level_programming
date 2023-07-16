@@ -29,7 +29,7 @@ count++;
 }
 }
 
-return count;
+return (count);
 }
 
 /**
@@ -45,11 +45,11 @@ int i, j, k, len = strlen(str);
 int word_count = count_words(str);
 
 if (str == NULL || str[0] == '\0')
-return NULL;
+return (NULL);
 
 words = malloc((word_count + 1) * sizeof(char *));
 if (words == NULL)
-return NULL;
+return (NULL);
 
 j = 0;
 for (i = 0; i < len; i++)
@@ -67,7 +67,7 @@ if (words[j] == NULL)
 for (i = 0; i < j; i++)
 free(words[i]);
 free(words);
-return NULL;
+return (NULL);
 }
 
 strncpy(words[j], &str[k], i - k);
@@ -76,5 +76,5 @@ j++;
 }
 
 words[j] = NULL;
-return words;
+return (words);
 }
