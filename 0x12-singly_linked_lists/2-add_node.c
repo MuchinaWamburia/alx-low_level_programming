@@ -23,7 +23,9 @@ if (!new)
 return (NULL);
 
 new->str = strdup(str);
-if (new->str == NULL) {
+if (new->str == NULL)
+
+{
 free(new);
 return (NULL);
 }
@@ -32,6 +34,6 @@ new->len = len;
 new->next = (*head);
 *head = new;
 
-return new;
+return (new);
 }
 
