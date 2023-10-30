@@ -18,5 +18,5 @@ int clear_bit(unsigned long int *n, unsigned int index);
 
 /* Function to count the number of bits needed to flip to get from one number to another */
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
-
+int get_endianness(void);
 #endif /* MAIN_H */
